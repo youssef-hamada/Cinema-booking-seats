@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>cinema</title>
+</head>
+<body>
+    <div class="cinema">
+        <h2>
+            Glorious 3D Cinema
+        </h2>
+        <div class="movie">
+            <label for="movie-list">Pick up a movie :</label>
+            <select name="" id="movie-list">
+                <option value="10">Avengers End Game $10</option>
+                <option value="5">Mission Impossible Rogue Nation $5</option>
+                <option value="20">Sherlock Holmes : the Final Problem $20</option>
+                <option value="15">Breaking Bad $15</option>
+            </select>
+        </div>
+
+        <!-- seats state  -->
+
+        <div class="state">
+            <div class="empty">
+                <div class="seat "></div>
+                <small>Empty</small>
+            </div>
+            <div class="occuiped">
+                <div class="seat " id="occ"></div>
+                <small>Occuiped</small>
+            </div>
+            <div class="selected">
+                <div class="seat " id="sel"></div>
+                <small>Selected</small>
+            </div>
+        </div>
+        <!-- screen -->
+        <div class="screen-container">
+            <div class="screen">
+
+            </div>
+        </div>
+
+        <!-- seats  -->
+        <div class="seats" id="seats">
+            <div class="row">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row c-right">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat occuiped" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat " id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row ">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row c-left">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+                <div class="seat" id = "seat"></div>
+            </div>
+        </div>
+        <div class="insta">
+            <p>you have selected <span id="count">0</span> seats for a price of $<span id="total">0</span> </p>
+        </div>
+    </div>
+</body>
+</html>

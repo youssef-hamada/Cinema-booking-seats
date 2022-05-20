@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h2 {
+    margin: 3rem;
+    font-size: 5rem;
+}
+.cinema {
+    height: 1000px;
+    width: 100vw;
+    background-color: rgb(0, 0, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.movie #movie-list{
+    margin: 2rem 2rem;
+    color: black;
+    padding: 0.4rem;
+}
+option{
+    color: black;
+}
+
+/* seats state  */
+
+.state {
+    width: 25vw;
+    padding: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+/* .state div{
+    display: flex;
+    justify-content: center;
+} */
+#occ{
+    background-color: white;
+}
+#sel{
+    background-color: rgb(0, 0, 148);
+}
+
+/* screen  */
+.screen-container {
+    perspective: 1000px;
+}
+.screen{
+    margin: 1.4rem;
+    width: 22rem;
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0px 3px 10px  rgb(255, 255, 255);
+    transform: rotateX(-45deg);
+    perspective: 800px;
+}
+
+
+/* .seats  */
+
+.seats {
+    height: 30vh;
+    width: 50vw;
+    /* background-color: rgba(255, 255, 255,0.2) ; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.seat{
+    height: 1rem;
+    width: 1rem;
+    margin: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.seat.occuiped{
+    background-color: white;
+}
+.seat.selected{
+    background-color: blue;
+}
+.seat:hover{
+    cursor: pointer;
+}
+
+.c-left{
+    margin: 0rem 0rem 1rem 1rem;
+}
+.c-right{
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+
+
+
+
+
+
+
+.insta{
+    color: white;
+}
